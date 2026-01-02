@@ -30,7 +30,20 @@ $(function() {
             if (data.batteryLevel) {
                 // Add fahrenheit
                 console.log("got battery level");
-                self.batteryLevel(data.batteryLevel.trim()+"%");
+                var value = data.batteryLevel.trim();
+                // Pick last line if multiple lines
+                if (value.indexOf("\n") >= 0) {
+                    value = value.split("\n").filter(function(line){
+                        return line.trim().length;
+                    }).pop();
+                }
+        
+                // Extract numeric level from semicolon-separated line
+                var fields = value.split(";");
+        
+                var level = parseInt(fields[2], 10);
+                if (isNaN(level)) {level = 100;}
+                self.batteryLevel(level + "%");
                 if ( data.batteryLevel < 10) { self.batteryIcon("fas fa-battery-empty"); }
                 // else if ( data.batteryLevel < 25) { self.batteryIcon("fas fa-battery-low"); }
                 else if ( data.batteryLevel < 50) { self.batteryIcon("fas fa-battery-quarter"); }
