@@ -19,6 +19,8 @@ or manually using this URL:
 
     https://github.com/aymaliev/OctoPrint-Octo4a_battery/archive/master.zip
 
+Also install [BatteryDog from Fdroid](https://f-droid.org/en/packages/net.sf.andbatdog.batterydog/)
+
 
 ## Configuration
 
