@@ -17,7 +17,7 @@ It also has a basic telegram integration and is able to send warnings to a teleg
 Install via the bundled [Plugin Manager](https://docs.octoprint.org/en/master/bundledplugins/pluginmanager.html)
 or manually using this URL:
 
-    https://github.com/tobiasgraf/OctoPrint-Octo4a_battery/archive/master.zip
+    https://github.com/aymaliev/OctoPrint-Octo4a_battery/archive/master.zip
 
 
 ## Configuration
