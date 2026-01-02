@@ -14,7 +14,7 @@ It also has a basic telegram integration and is able to send warnings to a teleg
 
 ## Setup
 
-1. Install manually the Octo4a_battery plugin using this URL:
+1. Install manually the Octo4a_battery plugin using the URL from this repository:
 
     https://github.com/aymaliev/OctoPrint-Octo4a_battery/archive/master.zip
 
