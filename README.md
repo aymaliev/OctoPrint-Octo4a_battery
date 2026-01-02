@@ -14,12 +14,17 @@ It also has a basic telegram integration and is able to send warnings to a teleg
 
 ## Setup
 
-Install via the bundled [Plugin Manager](https://docs.octoprint.org/en/master/bundledplugins/pluginmanager.html)
-or manually using this URL:
+1. Install manually the Octo4a_battery plugin using this URL:
 
     https://github.com/aymaliev/OctoPrint-Octo4a_battery/archive/master.zip
 
-Also install [BatteryDog from Fdroid](https://f-droid.org/en/packages/net.sf.andbatdog.batterydog/)
+2. Install [BatteryDog from Fdroid](https://f-droid.org/en/packages/net.sf.andbatdog.batterydog/)
+3. Set the battery optimisation to "Not Optimized" for BatteryDog
+4. Start the BatteryDog and it will begin writing the battery status to a text file 
+5. Find the BatteryDog dump file location. (e.g. look for "recent files" in FX file manager)
+6. Copy the BatteryDog dump file location path.
+7. Open the Octoprint configuration and find the Octo4a_battery settings
+8. Paste the BatteryDog filepath in the configuration
 
 
 ## Configuration
