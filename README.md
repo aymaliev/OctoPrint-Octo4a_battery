@@ -24,7 +24,7 @@ It also has a basic telegram integration and is able to send warnings to a teleg
 5. Find the BatteryDog dump file location. (e.g. look for "recent files" in FX file manager)
 6. Copy the BatteryDog dump file location path.
 7. Open the Octoprint configuration and find the Octo4a_battery settings
-8. Paste the BatteryDog filepath in the configuration
+8. Paste the BatteryDog filepath (usually `/storage/emulated/0/BatteryDog/battery.csv`) in the configuration
 
 
 ## Configuration
