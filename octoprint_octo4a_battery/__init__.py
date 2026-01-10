@@ -79,7 +79,7 @@ class Octo4a_batteryPlugin(octoprint.plugin.SettingsPlugin,
     ##~~ SettingsPlugin mixin
 
     def get_settings_defaults(self):
-        return dict(batteryLevelPath="/storage/emulated/0/BatteryDog/battery.csv", telegramBotToken="Token" , telegramChatID="chatID", telegramEnabled = 0)
+        return dict(batteryLevelPath="/sys/class/power_supply/battery/capacity", telegramBotToken="Token" , telegramChatID="chatID", telegramEnabled = 0)
 
 
     def get_template_configs(self):
